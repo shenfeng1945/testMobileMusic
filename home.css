@@ -129,7 +129,7 @@ body{
     /* min-width:calc(33.3333% - 2px); */
     margin-bottom:16px;
     position:relative;
-    min-width:32.8%;
+    width:32.8%;
     outline:1px solid red;
 }
 .recommend-list > ol.lists li img{
