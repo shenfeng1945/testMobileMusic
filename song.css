@@ -99,6 +99,7 @@ body{
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
+    outline:1px solid red;
 }
 .disc-container.playing .disc .center-image{
     animation-play-state: running;
