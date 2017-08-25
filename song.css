@@ -9,12 +9,12 @@ body{
     height:100vh;
     position: relative;
 }
-/* .center{
+.center{
     position: absolute;
     top:50%;
     left: 50%;
     transform:translate(-50%,-50%);
-} */
+}
 /*.page::after{*/
     /*content:'';*/
     /*display: block;*/
@@ -41,17 +41,17 @@ body{
    height:122px;
 }
 .disc-container .disc{
-    /* position:relative; */
-    display: flex;
+    position:relative;
+    /* display: flex;
     justify-content:center;
     flex-direction: column;
-    align-items:center;
+    align-items:center; */
     margin-top:63px;
     outline:1px solid ;
     height:248px;
 }
 .disc-container .disc .icon-wrap{
-    position:absolute;
+    /* position:absolute; */
     z-index:1;
     width:50px;
     height:50px;
@@ -88,13 +88,13 @@ body{
     /*z-index:2;*/
 }
 .disc-container .disc .ring{
-    /* display: block; */
+    display: block;
     width:248px;
     outline:1px solid red;
-    /* margin:0 auto; */
+    margin:0 auto;
 }
 .disc-container .disc .light{
-    position:absolute;
+    /* position:absolute; */
     width:248px;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
@@ -108,7 +108,7 @@ body{
     animation-play-state: running;
 }
 .disc-container .disc .center-image{
-    position:absolute;
+    /* position:absolute; */
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
