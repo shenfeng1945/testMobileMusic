@@ -84,13 +84,11 @@ body{
     fill:white;
     width:18px;
     height:18px;
-    outline:1px solid red;
     /*z-index:2;*/
 }
 .disc-container .disc .ring{
     display: block;
     width:248px;
-    outline:1px solid red;
     margin:0 auto;
 }
 .disc-container .disc .light{
@@ -98,26 +96,16 @@ body{
     width:248px;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
-    outline:1px solid blue;
-    /* left:50%;
-    top:50%;
-    transform:translate(-50%,-50%); */
-
 }
 .disc-container.playing .disc .light{
     animation-play-state: running;
 }
 .disc-container .disc .center-image{
-    /* position:absolute; */
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
-    outline:1px solid red;
-    /* margin:0 auto; */
-    /* left:50%;
-    top:50%;
-    transform:translate(-50%,-50%); */
+    z-index:2;
 }
 .disc-container.playing .disc .center-image{
     animation-play-state: running;
