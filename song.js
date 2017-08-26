@@ -13,10 +13,12 @@ audio.src = '//ov4sliu3n.bkt.clouddn.com/955d%252F222a%252F3b98%252F1115a4c61c8e
 $('.icon-pause').on('click', function () {
     audio.pause()
     $('.disc').addClass('no-animation')
+    $('.disc-container').removeClass('playing')
 })
 $('.icon-play').on('click', function () {
     audio.play()
     $('.disc').removeClass('no-animation')
+    $('.disc-container').addClass('playing')
 })
 
 // $(function () {
