@@ -48,6 +48,7 @@ body{
     align-items:center;
     margin-top:63px;
     height:248px;
+    outline:1px solid blue;
 }
 .disc-container .disc .icon-wrap{
     /* position:absolute; */
@@ -107,6 +108,7 @@ body{
     animation: circling 20s linear infinite;
     animation-play-state: paused;
     height:150px;
+    outline:1px solid red;
 }
 .disc-container.playing .disc .center-image{
     animation-play-state: running;
