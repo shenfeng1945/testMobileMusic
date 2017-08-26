@@ -96,8 +96,10 @@ body{
 .disc-container .disc .light{
     position:absolute;
     animation: circling 20s linear infinite;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
     width:248px;
+    animation-play-state:paused !important;
+    -webkit-animation-play-state:paused !important;
 }
 
 .disc-container.playing .disc .light{
@@ -107,7 +109,9 @@ body{
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
-    animation-play-state: paused;
+    animation-play-state:paused !important;
+    -webkit-animation-play-state:paused !important;
+    /* animation-play-state: paused; */
     height:150px;
     outline:1px solid red;
 }
