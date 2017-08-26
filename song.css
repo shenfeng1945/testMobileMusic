@@ -100,9 +100,9 @@ body{
     width:248px;
 }
 
-.disc-container.playing .disc .light{
+/* .disc-container.playing .disc .light{
     animation-play-state: running;
-}
+} */
 .disc-container .disc .center-image{
     width:150px;
     border-radius:50%;
@@ -111,9 +111,9 @@ body{
     height:150px;
     outline:1px solid red;
 }
-.disc-container.playing .disc .center-image{
-    animation-play-state: running;
-}
+/* .disc-container.playing .disc .center-image{ */
+    /* animation-play-state: running; */
+/* } */
 
 .lyrics{
     text-align:center;
