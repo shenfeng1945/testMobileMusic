@@ -16,23 +16,23 @@ $('.icon-play').on('click', function () {
     $('.disc-container').addClass('playing')
 })
 
-$(function () {
-    $.get('/song.json').then(function (object) {
-        let { lyric } = object
-        let array = lyric.split('\n')
-        let reg = /\[(.+)\](.*)/
-        let arr = []
-        let $lyric = $('.lyric-moving')
-        for (let i = 0; i < array.length; i++) {
-            if (array[i]) {
-                arr.push(array[i].match(reg))
-            }
-            if(arr[i][2]){
-            var $p = $('<p>')
-            $p.attr('date-time', arr[i][1]).text(arr[i][2])
-            $p.appendTo($lyric)
-            }
-        console.log(arr)
-        }
-    })
-})
+// $(function () {
+//     $.get('/song.json').then(function (object) {
+//         let { lyric } = object
+//         let array = lyric.split('\n')
+//         let reg = /\[(.+)\](.*)/
+//         let arr = []
+//         let $lyric = $('.lyric-moving')
+//         for (let i = 0; i < array.length; i++) {
+//             if (array[i]) {
+//                 arr.push(array[i].match(reg))
+//             }
+//             if(arr[i][2]){
+//             var $p = $('<p>')
+//             $p.attr('date-time', arr[i][1]).text(arr[i][2])
+//             $p.appendTo($lyric)
+//             }
+//         console.log(arr)
+//         }
+//     })
+// })
