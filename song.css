@@ -43,8 +43,8 @@ body{
 .disc-container .disc{
     position:relative;
     display: flex;
-    /* justify-content:center; */
-    flex-direction: column;
+    justify-content:center;
+    /* flex-direction: column; */
     align-items:center;
     margin-top:63px;
     height:248px;
@@ -87,7 +87,7 @@ body{
 }
 
 .disc-container .disc .ring{
-    positoin:absolute;
+    position:absolute;
     width:248px;
 }
 
@@ -102,12 +102,11 @@ body{
     animation-play-state: running;
 }
 .disc-container .disc .center-image{
-    position:absolute;
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
-    top:20%;
+    height:150px;
 }
 .disc-container.playing .disc .center-image{
     animation-play-state: running;
