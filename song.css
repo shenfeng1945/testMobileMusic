@@ -49,6 +49,7 @@ body{
     margin-top:63px;
     height:248px;
     outline:1px solid blue;
+    text-align:center;
 }
 .disc-container .disc .icon-wrap{
     /* position:absolute; */
