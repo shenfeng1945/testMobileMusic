@@ -96,25 +96,23 @@ body{
 .disc-container .disc .light{
     position:absolute;
     animation: circling 20s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
     width:248px;
-    -webkit-animation-play-state:paused ;
 }
 
-.disc-container.playing .disc .light{
-    animation-play-state: running;
+.disc-container .disc.no-animation .light{
+    animation-play-state: paused !important;
 }
 .disc-container .disc .center-image{
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
-    -webkit-animation-play-state:paused;
-    animation-play-state: paused;
+    animation-play-state: running;
     height:150px;
     outline:1px solid red;
 }
-.disc-container.playing .disc .center-image{ 
-    animation-play-state: running;
+.disc-container .disc.no-animation .center-image{ 
+    animation-play-state: paused !important;
  } 
 
 .lyrics{
