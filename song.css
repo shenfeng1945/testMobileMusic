@@ -2,7 +2,7 @@ body{
     font-family: Helvetica, sans-serif;
 }
 .page{
-    background:transparent url('http://p3.music.126.net/nfAuKY8Gx5V3kFhzlc9c5w==/17756013277324793.jpg') no-repeat;
+    /* background:transparent url('http://p3.music.126.net/nfAuKY8Gx5V3kFhzlc9c5w==/17756013277324793.jpg') no-repeat; */
     background-size:cover;
     display: flex;
     flex-direction:column;
@@ -14,6 +14,11 @@ body{
     top:50%;
     left: 50%;
     transform:translate(-50%,-50%);
+}
+.othercenter{
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 /*.page::after{*/
     /*content:'';*/
@@ -42,14 +47,12 @@ body{
 }
 .disc-container .disc{
     position:relative;
-    display: flex;
+    /* display: flex;
     justify-content:center;
-    /* flex-direction: column; */
-    align-items:center;
+    flex-direction: column;
+    align-items:center; */
     margin-top:63px;
     height:248px;
-    outline:1px solid blue;
-    text-align:center;
 }
 .disc-container .disc .icon-wrap{
     /* position:absolute; */
@@ -87,33 +90,30 @@ body{
     height:18px;
     /*z-index:2;*/
 }
-
 .disc-container .disc .ring{
-    position:absolute;
+    display: block;
     width:248px;
+    margin:0 auto;
 }
-
 .disc-container .disc .light{
-    position:absolute;
-    animation: circling 20s linear infinite;
-    animation-play-state: running;
+    /* position:absolute; */
     width:248px;
+    animation: circling 20s linear infinite;
+    animation-play-state: paused;
 }
-
-.disc-container .disc.no-animation .light{
-    animation-play-state: paused !important;
+.disc-container.playing .disc .light{
+    animation-play-state: running;
 }
 .disc-container .disc .center-image{
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
-    animation-play-state: running;
-    height:150px;
-    outline:1px solid red;
+    animation-play-state: paused;
+    z-index:2;
 }
-.disc-container .disc.no-animation .center-image{ 
-    animation-play-state: paused !important;
- } 
+.disc-container.playing .disc .center-image{
+    animation-play-state: running;
+}
 
 .lyrics{
     text-align:center;
@@ -132,6 +132,9 @@ body{
     height:72px;
     overflow:hidden;
 }
+.lyrics .lyric-content .lyric-moving{
+    transition:transform .3s linear;
+}
 .lyrics .lyric-content p{
     font-size:13px;
     color:rgba(255,255,255,.6);
@@ -143,23 +146,30 @@ body{
 }
 
 .links{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    transform:translateX(-50%);
+    width:100%;
+}
+.links > .wrapper{
     display: flex;
     justify-content: center;
-    position:relative;
-    margin-top:75px;
 }
 .links .open{
     color:#d43b32;
     font-size:15px;
     border:1px solid #d43b32;
-    padding:7px 42.5px;
+    padding:7px 42px;
     border-radius:4px;
 }
 .links .download{
     font-size:15px;
    background:#d43b32;
     color:white;
-    padding:7px 42.5px;
+    padding:7px 42px;
     border-radius:4px;
     margin-left:12px;
 }
