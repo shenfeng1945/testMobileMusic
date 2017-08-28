@@ -102,7 +102,7 @@ body{
     animation-play-state: running;
 }
 .disc-container .disc .light.pause{
-    animation-play-state: paused;
+    animation-play-state: paused !important;
 }
 .disc-container .disc .center-image{
     width:150px;
@@ -112,7 +112,7 @@ body{
     z-index:2;
 }
 .disc-container .disc .center-image.pause{
-    animation-play-state: paused;
+    animation-play-state: paused !important;
 }
 
 .lyrics{
