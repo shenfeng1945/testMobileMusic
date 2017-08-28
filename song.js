@@ -10,10 +10,14 @@ audio.oncanplay = function () {
 $('.icon-pause').on('click', function () {
     audio.pause()
     $('.disc-container').removeClass('playing')
+    $('.light').addClass('pause')
+    $('.center-image').addClass('pause')
 })
 $('.icon-play').on('click', function () {
     audio.play()
     $('.disc-container').addClass('playing')
+    $('.light').removeClass('pause')
+    $('.center-image').removeClass('pause')
 })
 $(function(){
     let url=window.location.href

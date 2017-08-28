@@ -99,20 +99,20 @@ body{
     /* position:absolute; */
     width:248px;
     animation: circling 20s linear infinite;
-    animation-play-state: paused;
-}
-.disc-container.playing .disc .light{
     animation-play-state: running;
+}
+.disc-container .disc .light.pause{
+    animation-play-state: paused;
 }
 .disc-container .disc .center-image{
     width:150px;
     border-radius:50%;
     animation: circling 20s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
     z-index:2;
 }
-.disc-container.playing .disc .center-image{
-    animation-play-state: running;
+.disc-container .disc .center-image.pause{
+    animation-play-state: paused;
 }
 
 .lyrics{
