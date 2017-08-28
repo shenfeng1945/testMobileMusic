@@ -4,9 +4,12 @@
 
 let audio = document.createElement('audio')
 // audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
-audio.oncanplay = function () {
+// audio.oncanplay = function () {
+//     audio.play()
+// }
+setTimeout(function(){
     audio.play()
-}
+},400)
 $('.icon-pause').on('click', function () {
     audio.pause()
     $('.disc-container').removeClass('playing')
