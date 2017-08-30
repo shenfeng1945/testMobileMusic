@@ -4,12 +4,12 @@
 
 let audio = document.createElement('audio')
 // audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
-// audio.oncanplay = function () {
-//     audio.play()
-// }
-setTimeout(function(){
+audio.oncanplay = function () {
     audio.play()
-},400)
+}
+// setTimeout(function(){
+//     audio.play()
+// },400)
 $('.icon-pause').on('click', function () {
     audio.pause()
     $('.disc-container').removeClass('playing')
@@ -29,8 +29,6 @@ $(function(){
     $.get('./song.json').then(function(object){
         for(var i=0;i<object.length;i++){
             if(object[i].id === id){
-                console.log(object[i]['img'])
-            //    xx(object[i].name,object[i].lyric,object[i].singer,object[i]['img'],object[i]['song'])
                xx({
                    name: object[i].name,
                    lyric: object[i]['lyric'],
